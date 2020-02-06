@@ -134,7 +134,7 @@ def run_command(args):
     os.makedirs(dst_dir, exist_ok=False)
     project.make_dataset().apply_model(
         save_dir=dst_dir,
-        model_name=args.model_name)
+        model=args.model_name)
 
     log.info("Inference results have been saved to '%s'" % dst_dir)
 
